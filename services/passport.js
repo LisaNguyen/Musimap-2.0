@@ -15,7 +15,8 @@ passport.deserializeUser((id, done) => {
 passport.use(new SpotifyStrategy({
   clientID: spotifyAuthClientId,
   clientSecret: spotifyAuthClientSecret,
-  callbackURL: 'http://localhost:8080/auth/spotify/callback'
+  callbackURL: '/auth/spotify/callback',
+  proxy: true
 }, (accessToken, refreshToken, profile, done) => {
   User.findOne({userId: profile.id}).then(user => {
     if (!user) {
