@@ -17,15 +17,15 @@ passport.use(new SpotifyStrategy({
   clientSecret: spotifyAuthClientSecret,
   callbackURL: '/auth/spotify/callback',
   proxy: true
-}, (accessToken, refreshToken, profile, done) => {
-  User.findOne({userId: profile.id}).then(user => {
+}, async (accessToken, refreshToken, profile, done) => {
+    const existing log = await User.findOne({userId: profile.id}).then(user => {
     if (!user) {
-      new User({
+      const user = await new User({
         userId: profile._json.id,
         email: profile._json.email,
         name: profile._json.display_name,
         country: profile._json.country
-      }).save().then(user => done(null, user));
+      }).save();
     } else {
       done(null, user);
     }
