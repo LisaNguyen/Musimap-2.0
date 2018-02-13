@@ -1,0 +1,40 @@
+$primary-blue: #59A5FF;
+
+ .nav-link, .header-brand {
+   color: white !important;
+ }
+
+ .header-brand {
+  font-family: 'Baloo', sans-serif;
+  font-size: 2em;
+ }
+
+#background-image {
+  position: relative;
+  background: url('../img/background2.jpg') no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.opening-line {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  padding-left: 30px;
+  font-size: 1.2em;
+  font-family: Helvetica, sans-serif;
+  color: #eee;
+
+  .secondary-line {
+    font-family: 'Monoton', cursive;
+    color: #D00202;
+    letter-spacing: 2px;
+  }
+
+  h3 {
+    line-height: 1.3;
+    letter-spacing: 1.2px;
+  }
+}
