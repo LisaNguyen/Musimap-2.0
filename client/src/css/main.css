@@ -8,7 +8,7 @@
 #background-image {
   position: relative;
   background: url("../img/background2.jpg") no-repeat;
-  background-position: top;
+  background-position: right top;
   background-size: cover;
   width: 100%;
   height: 100vh; }
@@ -33,10 +33,24 @@
     line-height: 1.3;
     font-weight: 700;
     letter-spacing: 2px; }
-  .opening-line .sign-in {
+  .opening-line #sign-up, .opening-line #sign-in {
     margin-top: 10px;
     width: 150px;
     padding: 10px 20px;
-    border-radius: 25px; }
+    border-radius: 25px;
+    font-weight: 600;
+    border-width: 2px;
+    border-color: white; }
+  .opening-line #sign-up {
+    background-color: white;
+    color: black; }
+  .opening-line #sign-up:hover {
+    color: white;
+    background-color: black; }
+  .opening-line #sign-in {
+    color: white; }
+  .opening-line #sign-in:hover {
+    color: black;
+    background-color: white; }
 
 /*# sourceMappingURL=main.css.map */

@@ -12,8 +12,8 @@ export default class Header extends Component {
             <div className="col-xs-4 mr-auto opening-line">
               <p className="secondary-line">We Are Live</p>
               <h3>Discover the beats of <br />the world.</h3>
-              <Button className="sign-in">Sign Up</Button>{' '}
-              <Button className="sign-in"  outline color="secondary">Log In</Button>{' '}
+              <Button id="sign-up">Sign Up</Button>{' '}
+              <Button id="sign-in"  outline color="secondary">Log In</Button>{' '}
             </div>
           </div>
         </div>
