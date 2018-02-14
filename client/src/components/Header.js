@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 import Nav from './Nav';
 
 export default class Header extends Component {
@@ -10,7 +11,9 @@ export default class Header extends Component {
           <div className="row">
             <div className="col-xs-4 mr-auto opening-line">
               <p className="secondary-line">We Are Live</p>
-              <h3>One platform, multiple sounds. <br /> Discover the beats of the world.</h3>
+              <h3>Discover the beats of <br />the world.</h3>
+              <Button className="sign-in">Sign Up</Button>{' '}
+              <Button className="sign-in"  outline color="secondary">Log In</Button>{' '}
             </div>
           </div>
         </div>

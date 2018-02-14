@@ -15,18 +15,28 @@
 
 .opening-line {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 0;
   padding-left: 30px;
   font-size: 1.2em;
-  font-family: Helvetica, sans-serif;
-  color: #eee; }
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #F1F1F1; }
   .opening-line .secondary-line {
-    font-family: 'Monoton', cursive;
-    color: #D00202;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
     letter-spacing: 2px; }
   .opening-line h3 {
     line-height: 1.3;
-    letter-spacing: 1.2px; }
+    font-weight: 700;
+    letter-spacing: 2px; }
+  .opening-line .sign-in {
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: 25px; }
 
 /*# sourceMappingURL=main.css.map */
