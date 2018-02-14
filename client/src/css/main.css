@@ -1,5 +1,14 @@
 .nav-link, .header-brand {
-  color: white !important; }
+  color: white !important;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.1px; }
+
+.nav-link {
+  padding: 0 15px !important; }
+
+.nav-link:hover {
+  border-bottom: 2px solid #ff0080; }
 
 .header-brand {
   font-family: 'Baloo', sans-serif;
@@ -15,12 +24,17 @@
 
 .opening-line {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 0;
   padding-left: 30px;
   font-size: 1.2em;
   font-family: 'Source Sans Pro', sans-serif;
   color: #F1F1F1; }
+  .opening-line h5 {
+    width: 350px;
+    letter-spacing: 1.15px;
+    line-height: 1.5;
+    font-size: 0.75em; }
   .opening-line .secondary-line {
     color: #fff;
     font-weight: 700;
