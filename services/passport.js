@@ -28,6 +28,6 @@ passport.use(new SpotifyStrategy({
       }).save();
       done(null, user);
     } else {
-      done(null, user);
+      done(null, existingUser);
     }
   }));
