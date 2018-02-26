@@ -26,21 +26,33 @@ $primary-blue: #59A5FF;
 
 #background-image {
   position: relative;
-  background: url('../img/background2.jpg') no-repeat;
-  background-position: right top;
+  background: url('../img/background.png');
   background-size: cover;
   width: 100%;
   height: 100vh;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #0d0e12 0%, #1a1b23 100%);
+    opacity: .65;
+  }
 }
 
 .opening-line {
   position: absolute;
-  top: 30%;
-  left: 0;
-  padding-left: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 1.2em;
   font-family: 'Source Sans Pro', sans-serif;
   color: #F1F1F1;
+  padding: 50px;
+  border-radius: 10px;
 
   h5 {
     width: 350px;
