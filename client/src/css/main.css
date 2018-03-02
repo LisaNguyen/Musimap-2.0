@@ -11,7 +11,8 @@
   border-bottom: 2px solid #ff0080; }
 
 .navbar-toggler {
-  border-color: white; }
+  border: 0px;
+  border-radius: 5px; }
 
 .header-brand {
   font-family: 'Baloo', sans-serif;
@@ -31,7 +32,7 @@
     bottom: 0;
     left: 0;
     background: linear-gradient(180deg, #0d0e12 0%, #1a1b23 100%);
-    opacity: .65; }
+    opacity: .6; }
 
 .opening-line {
   position: absolute;
@@ -75,9 +76,13 @@
     color: white;
     background-color: black; }
   .opening-line #sign-in {
+    background-color: transparent;
     color: white; }
   .opening-line #sign-in:hover {
     color: black;
     background-color: white; }
+
+.dashboard {
+  background: black; }
 
 /*# sourceMappingURL=main.css.map */

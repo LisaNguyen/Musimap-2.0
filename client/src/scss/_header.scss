@@ -16,7 +16,8 @@ $primary-blue: #59A5FF;
  }
 
  .navbar-toggler {
-  border-color: white;
+  border: 0px;
+  border-radius: 5px;
  }
 
  .header-brand {
@@ -39,7 +40,7 @@ $primary-blue: #59A5FF;
     bottom: 0;
     left: 0;
     background: linear-gradient(180deg, #0d0e12 0%, #1a1b23 100%);
-    opacity: .65;
+    opacity: .6;
   }
 }
 
@@ -98,6 +99,7 @@ $primary-blue: #59A5FF;
   }
 
   #sign-in {
+    background-color: transparent;
     color: white;
   }
 

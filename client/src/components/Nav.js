@@ -33,7 +33,7 @@ export default class Header extends Component {
       <div>
         <Navbar color="faded" expand="md">
           <NavbarBrand href="/" className="header-brand">Musimap</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
+          <NavbarToggler onClick={this.toggle} className="navbar-dark" />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="nav-items ml-auto" navbar>
               <NavItem>

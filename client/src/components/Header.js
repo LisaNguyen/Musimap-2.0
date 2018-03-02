@@ -14,7 +14,7 @@ export default class Header extends Component {
               <h3>Discover the beats of <br />the world.</h3>
               <h5>Musimap is an interactive tool that allows you to explore the different, distinct sounds of over 800 cities.</h5>
               <Button id="sign-up" href="https://www.spotify.com/ie/signup/" target="_blank">Sign Up</Button>{' '}
-              <Button id="sign-in"  outline color="secondary">Log In</Button>{' '}
+              <Button id="sign-in" href="/auth/spotify" color="secondary">Log In</Button>{' '}
             </div>
           </div>
         </div>

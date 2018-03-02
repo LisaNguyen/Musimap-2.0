@@ -5,7 +5,13 @@ module.exports = (app) => {
     scope: ['user-read-email', 'user-read-private']
   }));
 
-  app.get('/auth/spotify/callback', passport.authenticate('spotify'));
+  app.get(
+    '/auth/spotify/callback',
+    passport.authenticate('spotify'),
+    (req, res) => {
+      res.redirect('/dashboard');
+    }
+  );
 
   app.get('/api/current_user', (req, res) => {
     res.send(req.user);
